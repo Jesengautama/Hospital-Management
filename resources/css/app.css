@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force light theme and apply consistent styling */
+body {
+    @apply bg-white text-gray-900;
+}
+
+/* Custom component styles for the bright theme */
+.bg-primary-light {
+    @apply bg-primary-100;
+}
+
+.text-primary {
+    @apply text-primary-600;
+}
+
+.border-primary {
+    @apply border-primary-300;
+}
+
+/* Override dark mode classes to ensure consistent light theme */
+.dark\:bg-gray-800 {
+    @apply bg-white !important;
+}
+
+.dark\:bg-gray-900 {
+    @apply bg-white !important;
+}
+
+.dark\:text-gray-200 {
+    @apply text-primary-600 !important;
+}
+
+.dark\:text-gray-100 {
+    @apply text-gray-900 !important;
+}
+
+.dark\:border-gray-700 {
+    @apply border-gray-200 !important;
+}
+
+.dark\:border-gray-600 {
+    @apply border-gray-200 !important;
+}
